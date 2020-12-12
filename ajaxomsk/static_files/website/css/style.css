@@ -1,0 +1,801 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #D31338 0%, rgba(10, 9, 9, 0.931828) 5.21%, rgba(0, 0, 0, 0.898962) 29.17%, rgba(0, 0, 0, 0.887796) 54.69%, rgba(14, 13, 13, 0.952425) 69.79%, #0F0F0F 87.5%, #000000 100%);
+    color: #FFFFFF;
+}
+
+.container {
+    margin: auto;
+    max-width: 1170px;
+    width: 90%;
+}
+
+.header {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.logo {
+    width: 169px;
+    height: 171px;
+    margin-top: 11px;
+}
+
+.header-right {
+    display: block;
+    margin-left: 24px;
+    margin-top: 11px;
+}
+
+.header-top {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-name {
+    font-family: 'Merienda One';
+    font-style: normal;
+    font-size: 40px;
+    line-height: 58px;
+    flex-wrap: nowrap;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-link {
+    margin-left: 10px;
+}
+
+.navigation {
+    margin-top: 70px;
+    margin-left: 30px;
+    height: 35px;
+}
+
+.navigation-link {
+    font-family: Ubuntu Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFF9F9;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+.navigation-link:first-child {
+    margin-left: 0;
+}
+
+.line {
+    border: 1px solid #FFFDFD;
+}
+
+.red-line {
+    border: 3px solid #E54B69;
+}
+
+/* first-section */
+
+.first-section {
+    margin-top: 140px;
+}
+
+.photo-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-slide-left {
+    display: block;
+}
+
+.photo-description {
+    font-family: Balsamiq Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.photo-team {
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.text-description {
+    font-family: Balsamiq Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFCFC;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.swiper-container1 {
+    overflow: hidden;
+}
+
+.photo-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 44px;
+    cursor: pointer;
+}
+.photo-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.photo-bullet-active {
+    background-color: #ffffff;
+}
+
+/* second-section */
+
+.second-section {
+    margin-top: 120px;
+    display: block;
+    text-align: center;
+}
+
+.second-section-title {
+    width: 261px;
+    display: block;
+    margin: auto;
+}
+
+.we-team-title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    flex-wrap: nowrap;
+}
+
+.team-line {
+    width: 100px;
+    margin-top: 25px;
+    border: 1px solid;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.players {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player {
+    width: 178px;
+    height: 260px;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 42px;
+}
+
+.player-avatar {
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.player-name {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFEFE;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+/* third-section */
+.third-section {
+    margin-top: 120px;
+}
+
+.table-title{
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 57px;
+    text-align: center;
+}
+
+.table {
+    display:flex;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+
+/* fourth-section */
+.fourth-section {
+    margin-top: 165px;
+    display: block;
+}
+
+.games-title {
+    font-family: Balsamiq Sans;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.game-slide {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-photo {
+    border-radius: 20px;
+}
+
+.game-description {
+    font-family: Balsamiq Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.swiper-container2 {
+    overflow: hidden;
+}
+
+.games-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 44px;
+    cursor: pointer;
+}
+.games-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.games-bullet-active {
+    background-color: #ffffff;
+}
+
+/* fifth-section */
+.fifth-section {
+    display: none;
+    margin-left: 10px;
+    margin-top: 70px;
+}
+.vk {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.vk-text {
+    font-family: Balsamiq Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFDFD;
+}
+.vk-icon {
+    margin-left: 5px;
+    width: 37px;
+    height: 24px;
+}
+.instagram {
+    margin-top: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.instagram-text {
+    font-family: Balsamiq Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFDFD;
+}
+.instagram-icon {
+    margin-left: 5px;
+    width: 31px;
+    height: 26px;
+}
+
+/* footer */
+.footer {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+.license {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 31px;
+    color: #BFBFBF;
+}
+
+.creators {
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #BFBFBF;
+    text-align: right;
+}
+
+/* responsive */
+@media (max-width: 1152px) {
+    
+    /* header */
+    .navigation {
+        margin-left: 20px;
+    }
+    .navigation-link {
+        margin-left: 70px;
+    }
+
+    /* first-section */
+    .photo-team {
+        width: 600px;
+        height: 410px;
+    }
+
+    /* fourth-section */
+    .games-title {
+        font-size: 30px;
+    }
+    .game-photo {
+        width: 650px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    /* header */
+    .navigation-link {
+        margin-left: 50px;
+    }
+
+    /* second-section */
+    .player-avatar {
+        width: 160px;
+        height: 160px;
+    }
+    .player-name {
+        font-size: 20px;
+    }
+
+    /* third-section */
+    .table-title {
+        font-size: 35px;
+    }
+    .table {
+        width: 600px;
+        height: 392px;
+    }
+
+    /* fourth-section */
+    .games-title {
+        font-size: 30px;
+    }
+    .game-description {
+        font-size: 12px;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: 100px;
+    }
+    .license {
+        font-size: 10px;
+    }
+    .creators {
+        font-size: 15px;
+    }
+}
+@media (max-width: 1024px) {
+    
+    /* header */
+    .navigation-link {
+        margin-left: 45px;
+    }
+
+    /* fourth-section */
+    .game-photo {
+        width: 600px;
+        height: 232px;
+    }
+    
+}
+@media (max-width: 834px) {
+    /* header */
+    .logo {
+        width: 150px;
+        height: 152px;
+        margin-top: 20px;
+    }
+    .team-name {
+        font-size: 35px;
+    }
+    .header-right {
+        margin-left: 0;
+    }
+    .navigation-link {
+        font-size: 25px;
+        margin-left: 30px;
+    }
+    
+    /* first-section */
+    .first-section {
+        margin-top: 80px;
+    }
+    .photo-description {
+        font-size: 30px;
+    }
+    .text-description {
+        font-size: 20px;
+    }
+    .photo-team {
+        width: 500px;
+        height: 341px;
+    }
+
+    /* second-section */
+    .we-team-title {
+        font-size: 25px;
+    }
+    .team-line {
+        margin-top: 10px;
+        width: 80px;
+    }
+    .players {
+        margin-top: 35px;
+    }
+    .player {
+        margin-bottom: 0;
+    }
+    .player-avatar {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 0;
+    }
+    .player-name {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    /* third-section */
+    .third-section{
+        margin-top: 50px;
+    }
+    .table-title {
+        font-size: 30px;
+    }
+    .table {
+        width: 550px;
+        height: 360px;
+    }
+
+    /* fourth-section */
+    .fourth-section {
+        margin-top: 100px;
+    }
+    .game-photo {
+        width: 457px;
+        height: 176px;
+    }
+    .games-title {
+        font-size: 25px;
+        text-align: center;
+    }
+    .game-description {
+        font-size: 10px;
+    }
+    .games-pagination {
+        margin-top: 0;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: 100px;   
+    }
+}
+
+@media (max-width: 768px) {
+    
+    /* header */
+    .team-name {
+        font-size: 30px;
+    }
+    .navigation-link {
+        margin-left: 20px;
+    }
+    .social-link {
+        width: 30px;
+        height: 26px;
+    }
+    .social-link:last-child {
+        width: 36px;
+    }
+    
+    /* first-section */
+    .photo-team {
+        width: 450px;
+        height: 307px;
+    }
+
+    /* second-section */
+    .player-avatar {
+        width: 125px;
+        height: 125px;
+    }
+    .player-name {
+        font-size: 18px;
+    }
+
+    /* fourth-section */
+
+    .games-title {
+        font-size: 40px;
+    }
+    .game-slide {
+        margin-top: 40px;
+        display: block;
+    }
+    .game-photo {
+        width: 768px;
+        height: 250px;
+        border-radius: none;
+    }
+    .game-description {
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 22px;
+        align-items: center;
+        text-align: center;
+    }
+    .games-pagination {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    body {
+        background: linear-gradient(180deg, #D31338 0%, rgba(10, 9, 9, 0.931828) 2.6%, rgba(0, 0, 0, 0.898962) 29.17%, rgba(0, 0, 0, 0.887796) 54.69%, rgba(14, 13, 13, 0.952425) 69.79%, #0F0F0F 87.5%, #000000 100%);
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    /* header */
+    .header {
+        display: none;
+    }
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+    .logo {
+        margin-left: 10px;
+        width: 54px;
+        height: 55px;
+        margin-top: 6px;
+    }
+    .team-name {
+        font-size: 25px;
+        line-height: 26px;
+    }
+    .red-line {
+        border: 2px solid #E54B69;
+    }
+    .menu {
+        margin-right: 15px;
+    }
+
+    /* first-section */
+    .first-section {
+        margin-top: 70px;
+        display: block;
+    }
+    .photo-slide {
+        display: block;
+        justify-content: center;
+    }
+    .photo-slide-left {
+        display: block;
+    }
+    .photo-description {
+        font-size: 20px;
+        line-height: 24px;
+        display: block;
+        text-align: center;
+    }
+    .photo-team {
+        margin-top: 15px;
+        border-radius: 0;
+        height: 50%;
+    }
+    .text-description {
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .photo-pagination {
+        margin-top: 15px;
+    }
+
+    /* second-section */
+    .second-section {
+        margin-top: 70px;
+    }
+    .we-team-title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .player {
+        flex-basis: 50%;
+        margin-bottom: 0;
+    }
+    .player-avatar {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 0;
+    }
+    .player-name {
+        font-size: 20px;
+    }
+
+    /* third-section */
+    .third-section {
+        margin-top: 70px;
+    }
+    .table-title {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .table {
+        margin-top: 9px;
+        border-radius: 0;
+        height: 50%;
+    }
+
+    /* fourth-section */
+    .fourth-section {
+        margin-top: 70px;
+    }
+    .games-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .games-slide {
+        margin-top: 25px;
+    }
+    .game-photo {
+        height: 150px;
+        border-radius: 0;
+    }
+    .game-description {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    /* fifth-section */
+    .fifth-section {
+        display: block;
+    }
+    
+    /* footer */
+    .footer {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 70px;
+    }
+    .license {
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .creators {
+        font-size: 10px;
+        line-height: 13px;
+        flex-basis: 30%;
+    }
+}
+
+@media (max-width: 375px) {
+    /* fourth-section */
+    .game-photo {
+        height: 50%;
+    }
+
+    /* footer */
+    .license {
+        font-size: 7px;
+    }
+    .creators {
+        flex-basis: 40%;
+    }
+}

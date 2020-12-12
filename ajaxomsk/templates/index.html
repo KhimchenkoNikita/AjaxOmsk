@@ -1,14 +1,293 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'website/style/style.css' %}">
-    <script src="{% static 'website/js/main.js' %}" defer></script>
-    <title>{% block title %}Document{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'website/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    {% block content %}text{% endblock %}
+    <div class="container">
+        <header class="header wow fadeInDown" data-wow-duration="1.0s">
+            <img src="{% static 'website/img/team/logo.png' %}" alt="logo" class="logo" />
+            <div class="header-right">
+                <div class="header-top">
+                    <span class="team-name">FC Ajax Omsk</span>       
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/mfl55" class="social-link"><img src="{% static 'website/img/social/youtube.svg' %}" alt="YouTube"></a>
+                        <a href="https://www.instagram.com/ajax_omsk" class="social-link"><img src="{% static 'website/img/social/instagram.svg' %}" alt="Instagram"></a>
+                        <a href="https://vk.com/ajax_omsk" class="social-link"><img src="{% static 'website/img/social/vk.svg' %}" alt="VK"></a>
+                    </div>
+                    <!-- .social-links -->
+                </div>
+                <!-- .header-top -->
+                <nav class="navigation">
+                    <a href="#" class="navigation-link">Команда</a>
+                    <a href="#" class="navigation-link">Новости</a>
+                    <a href="#" class="navigation-link">Сезон</a>
+                    <a href="#" class="navigation-link">Галерея</a>
+                    <a href="#" class="navigation-link">Контакты</a>
+                </nav>
+            </div>
+            <!-- .header-right -->
+        </header>
+        <header class="mobile-header wow fadeInDown" data-wow-duration="1.0s">
+            <img src="{% static 'website/img/team/logo.png' %}" alt="logo" class="logo" />
+            <span class="team-name">FC Ajax Omsk</span> 
+            <img src="{% static 'website/img/menu.svg' %}" alt="menu" class="menu">
+        </header>
+        <!-- /.mobile-header -->
+    </div>
+    <!-- /.container -->
+    <div class="line"></div>
+    <div class="red-line"></div>
+    <div class="line"></div>
+    
+    <main>
+        <section class="first-section">
+            <div class="container">
+
+                <div class="swiper-container1 photo-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide photo-slide">
+                            <div class="photo-slide-left">
+                                <span class="photo-description">МФЛ «Осень-Зима 2020»</span>
+                                <img src="{% static 'website/img/team/osen-zima2020.jpg' %}" alt="Осень-Зима" class="photo-team">
+                            </div>
+                            <!-- /.photo-slide-left -->
+                            <p class="text-description">
+                                ОписаниеОписание <br>
+                                ОписаниеОписание <br>
+                                ОписаниеОписание <br>
+                                ОписаниеОписание <br>
+                            </p>
+                        </div>
+                        <!-- slide 1-->
+                        <div class="swiper-slide photo-slide">
+                            <div class="photo-slide-left">
+                                <span class="photo-description">МФЛ «Лето 2020»</span>
+                                <img src="{% static 'website/img/team/summer2020.jpg' %}" alt="Лето 2020" class="photo-team">
+                            </div>
+                            <!-- /.photo-slide-left -->
+                            <p class="text-description">
+                                ОписаниеОписание <br>
+                                ОписаниеОписание <br>
+                                ОписаниеОписание <br>
+                                ОписаниеОписание <br>
+                            </p>
+                        </div>
+                        <!-- slide 2-->
+                        <div class="swiper-slide photo-slide">
+                            <div class="photo-slide-left">
+                                <span class="photo-description">МФЛ «Осень-Зима 2019»</span>
+                                <img src="{% static 'website/img/team/osen-zima2019.jpg' %}" alt="Осень-Зима 2019" class="photo-team">
+                            </div>
+                            <!-- /.photo-slide-left -->
+                            <p class="text-description">
+                                ОписаниеОписание <br>
+                                ОписаниеОписание <br>
+                                ОписаниеОписание <br>
+                                ОписаниеОписание <br>
+                            </p>
+                        </div>
+                        <!-- slide 3-->
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="photo-pagination"></div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.first-section -->
+
+        <section class="second-section wow zoomIn" data-wow-duration="1.0s">
+            <div class="container">
+                <div class="second-section-title">
+                    <span class="we-team-title">Наша команда</span>
+                    <div class="team-line"></div>
+                </div>
+                <div class="players">
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Ivan Shehovtstov.jpg' %}" alt="Иван Шеховцов" class="player-avatar">
+                        <span class="player-name">Иван <br> Шеховцов </span>
+                    </div>
+                    <!-- /.player -->
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Zhaslan Zhumakhanov.jpg' %}" alt="Жаслан Жумаханов" class="player-avatar">
+                        <span class="player-name">Жаслан <br> Жумаханов</span>
+                    </div>
+                    <!-- /.player -->
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Nariman Nazarov.jpg' %}" alt="Нариман Назаров" class="player-avatar">
+                        <span class="player-name">Нариман <br> Назаров</span>
+                    </div>
+                    <!-- /.player -->
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Mikhail Kolpaschikov.jpg' %}" alt="Михаил Колпащиков" class="player-avatar">
+                        <span class="player-name">Михаил <br> Колпащиков</span>
+                    </div>
+                    <!-- /.player -->
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Ivan Masterov.jpg' %}" alt="Иван Мастеров" class="player-avatar">
+                        <span class="player-name">Иван <br> Мастеров</span>
+                    </div>
+                    <!-- /.player -->
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Vlasov Pavel.jpg' %}" alt="Власов Павел" class="player-avatar">
+                        <span class="player-name">Павел <br> Власов</span>
+                    </div>
+                    <!-- /.player -->
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Vladislav Termanov.jpg' %}" alt="Владислав Терманов" class="player-avatar">
+                        <span class="player-name">Владислав <br> Терманов</span>
+                    </div>
+                    <!-- /.player -->
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Mikhail Metelyov.jpg' %}" alt="Михаил Метелёв" class="player-avatar">
+                        <span class="player-name">Михаил <br> Метелёв</span>
+                    </div>
+                    <!-- /.player -->
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Isin Talgat.jpg' %}" alt="Талгат Исин" class="player-avatar">
+                        <span class="player-name">Талгат <br> Исин</span>
+                    </div>
+                    <!-- /.player -->
+                    <div class="player">
+                        <img src="{% static 'website/img/team/Nariman Nazarov.jpg' %}" alt="Nariman Nazarov" class="player-avatar">
+                        <span class="player-name">Нариман <br> Назаров</span>
+                    </div>
+                    <!-- /.player -->
+                </div>
+                <!-- /.players -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.second-section -->
+
+        <section class="third-section wow fadeInLeft" data-wow-duration="1.0s">
+            <div class="container">
+                <h1 class="table-title">Турнирная таблица МФЛ «Осень-Зима 2019» Дивизион G </h1>
+                <img src="{% static 'website/img/games/table.png' %}" alt="tournament table" class="table">
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- third-sectoin -->
+
+        <section class="section fourth-section wow fadeInRight" data-wow-duration="1.0s">
+            <div class="container">
+                <h1 class="games-title">Последние матчи</h1>
+                
+                <!-- Slider main container -->
+                <div class="swiper-container2 games-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide game-slide">
+                            <img src="{% static 'website/img/games/game1.png' %}" alt="game 1" class="game-photo">
+                            <p class="game-description">
+                                1:0 Фабрициус 11` <br>
+                                1:1 Назаров 16` (Мастеров) <br>
+                                2:1 Крумм 31` <br>
+                                3:1 Прокоп 40` <br>
+                                🚨 Фолы: 2-2 (1-2) <br>
+                                ⛔ Предупреждение: <br> 
+                                Терманов (Аякс) неспортивное поведение 24` <br>
+                                Пехтерев (Дети Элиты) неспортивное поведение 24` <br>
+                                Шемет (Дети Элиты) неспортивное поведение 24` <br>
+                                Петров (Дети Элиты) неспортивное поведение 24` <br>
+                                Панфилов (Дети Элиты) неспортивное поведение 33` <br>
+                                ✋ Вратари: Прокоп - Шеховцов <br>
+                            </p>
+                        </div>
+                        <!-- slide 1-->
+                        <div class="swiper-slide game-slide">
+                            <img src="{% static 'website/img/games/game2.png' %}" alt="game 2" class="game-photo">
+                            <p class="game-description">
+                                1:0 Метелев 3` (Мастеров) <br>
+                                1:1 Ефремов 16` <br>
+                                1:2 Семин 23` <br>
+                                1:3 Ворожцов 27` <br>
+                                1:4 Автогол (Оконешников) 38` <br>
+                                🚨 Фолы: 0-0 (4-1) <br>
+                                ⛔ Предупреждения: <br>
+                                Оконешников (Аякс) грубая игра 7` <br>
+                                Бочков (ВЭЛТА) неспортивное поведение 13` <br>
+                                Терманов (Аякс) неспортивное поведение 30` <br>
+                                ✋ Вратари: Шеховцов - Фатеев <br>
+                            </p>
+                        </div>
+                        <!-- slide 2-->
+                        <div class="swiper-slide game-slide">
+                            <img src="{%static 'website/img/games/game3.png' %}" alt="game 3" class="game-photo">
+                            <p class="game-description">
+                                0:1 Колпащиков 7` (п) <br>
+                                0:2 Жумаханов 11` <br>
+                                0:3 Исин 21` (Метелёв) <br>
+                                0:4 Назаров 24` (Мастеров) <br>
+                                0:5 Власов 29` (Назаров) <br>
+                                0:6 Терманов 33` (Жумаханов) <br>
+                                1:6 Отрощенко 37` <br>
+                                🚨 Фолы: 5-3 (2-2) <br>
+                                ⛔ Предупреждения: <br>
+                                Григорищенко (Кормиловка) грубая игра 7` <br>
+                                ✋ Вратари: Мендубаев - Шеховцов
+                            </p>
+                        </div>
+                        <!-- slide 3-->
+                    </div>
+                    <div class="games-pagination"></div>
+                </div>
+            
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- fourth-section -->
+
+        <section class="fifth-section">
+            <div class="vk">
+                <a href="https://vk.com/ajax_omsk" class="vk-text">Наша группа ВКонтакте</a>
+                <a href="https://vk.com/ajax_omsk" class="vk-icon"><img src="{% static 'website/img/social/vk.svg' %}" alt="vk"></a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/ajax_omsk" class="instagram-text">Наша аккаунт в Инстаграм</a>
+                <a href="https://www.instagram.com/ajax_omsk" class="instagram-icon"><img src="{% static 'website/img/social/instagram.svg' %}" alt="instagram"></a>
+            </div>
+        </section>
+        <!-- /.fifth-section -->
+     </main>
+
+     <footer>
+        <div class="container">
+            <div class="footer">
+                <span class="license">© 2019-2020 Футбольный клуб «Аякс» Омск</span>
+                <span class="creators">
+                    Created by Zhaslan Zhumakhanov and Nikita Khimchenko 
+                </span>
+            </div>
+            <!-- footer -->
+        </div> 
+        <!-- /.container -->  
+     </footer>
+
+    <script src="{% static 'website/js/wow.min.js' %}"></script>
+    <script src="{% static 'website/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'website/js/main.js' %}"></script>
+
 </body>
 </html>
